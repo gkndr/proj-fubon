@@ -1,0 +1,27 @@
+FUBON
+3/18
+柏宏交代事項
+
+熟悉前端開發文件：
+Native ESM以及CommonJS脈絡、差異；Vue的Vite開發環境與生產環境不同打包方式
+Bundle base vs Native ESM
+鞏固SFC單文件觀念
+重新複習v-bind、html、for、if、show、on、model
+realative、ref的應用
+components的切割與defineExpos暴露外部使用
+main.js的全局註冊與父組件的區域註冊子組件
+components的屬性傳遞
+
+智能客服專案介紹：
+六月初
+Layout API的設計模式
+工作分配：前端畫面的套版
+
+3/19
+重灌電腦：
+設置環境
+
+智能客服專案的vuex store、pinia功能：
+熟悉狀態管理的使用方式
+
+前端Layout → Ant Design
