@@ -1,6 +1,7 @@
 <script setup>
 import { useCounterStore } from '@/stores/Pinia/counter'
-import { useStore } from '@/stores/Vuex/index';
+
+import { useStore } from '';
 import { computed } from 'vue'
 
 const storePinia = useCounterStore();

@@ -1,0 +1,169 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.fontSize": 17,
+    "editor.lineHeight": 24,
+    "editor.wordWrap": "on",
+    "editor.accessibilitySupport": "off",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "workbench.editor.enablePreview": false,
+    "livePreview.customExternalBrowser": "Chrome",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "accessibility.verbosity.notebook": false,
+    "java.debug.settings.exceptionBreakpoint.skipClasses": [],
+    "java.configuration.detectJdksAtStart": false,
+    "java.debug.settings.stepping.skipClasses": [],
+    "java.jdt.ls.java.home": "/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontSize"
+    ],
+    "cSpell.userWords": [
+        "axios",
+        "chartjs",
+        "datas",
+        "Datetimepicker",
+        "entiry",
+        "flatpickr",
+        "fontawesome",
+        "fortawesome",
+        "ispan",
+        "Jdbc",
+        "Labboot",
+        "makima",
+        "navbars",
+        "pickr",
+        "Pinia",
+        "rgba",
+        "Selecter",
+        "Swal",
+        "vmodel",
+        "Vuex"
+    ],
+    "terminal.integrated.fontFamily": "MeSLOLGS NF",
+    "terminal.integrated.fontSize": 13,
+    "workbench.iconTheme": "city-lights-icons-vsc-light",
+    "mssql.connections": [
+        {
+            "server": "localhost",
+            "database": "java",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "java",
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true,
+            "connectTimeout": 15,
+            "commandTimeout": 30,
+            "applicationName": "vscode-mssql"
+        }
+    ],
+    "mssql.enableQueryHistoryCapture": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "peacock.favoriteColors": [
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f5d84e"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        },
+        {
+            "name": "Java Red",
+            "value": "#cf372e"
+        }
+    ],
+
+
+    
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 2,
+    "indentRainbow.colors": [
+        "rgba(243, 211, 72, 0.2)",
+        "rgba(204, 118, 209, 0.2)",
+        "rgba(74, 157, 248, 0.2)",
+    ]
+
+    ,
+    "indentRainbow.colorOnWhiteSpaceOnly": true,
+    "color-highlight.markRuler": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.inlineSuggest.showToolbar": "always",
+    "editor.detectIndentation": false,
+    "CodeGPT.Autocomplete.suggestionDelay": 1000,
+    "explorer.confirmDragAndDrop": false,
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.12",
+    "workbench.startupEditor": "none",
+    "editor.minimap.enabled": false,
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+    "workbench.sideBar.location": "right",
+    "gitlens.views.contributors.avatars": false,
+    "workbench.colorTheme": "Default Dark+ IntelliJ Theme",
+    "CodeGPT.apiKey": "OpenAI",
+    "workbench.activityBar.location": "top",
+    "accessibility.signals.lineHasError": {
+        "sound": "off"
+    },
+    "accessibility.signals.lineHasFoldedArea": {
+        "sound": "off"
+    },
+    "accessibility.signals.lineHasBreakpoint": {
+        "sound": "off"
+    },
+    "accessibility.signals.lineHasInlineSuggestion": {
+        "sound": "off"
+    },
+    "accessibility.signals.onDebugBreak": {
+        "sound": "off"
+    },
+    "accessibility.signals.noInlayHints": {
+        "sound": "off"
+    },
+    "accessibility.signals.taskCompleted": {
+        "sound": "off"
+    },
+    "accessibility.signals.taskFailed": {
+        "sound": "off"
+    },
+    "accessibility.signals.notebookCellCompleted": {
+        "sound": "off"
+    },
+    "accessibility.signals.notebookCellFailed": {
+        "sound": "off"
+    },
+    "accessibility.signals.diffLineDeleted": {
+        "sound": "off"
+    },
+    "accessibility.signals.diffLineModified": {
+        "sound": "off"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "nightwatch.quickSettings.parallels": 8,
+}
