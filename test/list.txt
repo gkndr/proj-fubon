@@ -1,7 +1,9 @@
 FUBON
+
+——————————————————
+
 3/18
 柏宏交代事項
-
 熟悉前端開發文件：
 Native ESM以及CommonJS脈絡、差異；Vue的Vite開發環境與生產環境不同打包方式
 Bundle base vs Native ESM
@@ -12,16 +14,42 @@ components的切割與defineExpos暴露外部使用
 main.js的全局註冊與父組件的區域註冊子組件
 components的屬性傳遞
 
+
 智能客服專案介紹：
 六月初
 Layout API的設計模式
 工作分配：前端畫面的套版
 
+——————————————————
+
 3/19
 重灌電腦：
-設置環境
 
 智能客服專案的vuex store、pinia功能：
 熟悉狀態管理的使用方式
 
+重灌電腦後：
+設置環境、
+
 前端Layout → Ant Design
+
+——————————————————
+
+3/20 
+熟習智能客服程式碼
+1. 了解API與SDK打包之間的呼叫方式
+2. 
+
+熟習需求單開立流程->
+1. IntelliJ安裝需求單
+2. VPN需求單
+
+完成新人自介、deltapath、M+設定、HR+的打卡
+
+——————————————————
+
+3/21
+嘗試聯絡itsc解決外部email傳入問題
+設置vsCode環境
+APS問卷的填寫
+前、後端課程的補足
