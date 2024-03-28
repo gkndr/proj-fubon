@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Check</title>
+
+  <script>
+    function checkPwd() {
+      let pwdValue = document.getElementById("pwd");
+      let idPwdValueString = pwdValue.value;
+      let pwdlength = idPwdValueString.length;
+      let sp = document.getElementById("pwdsp");
+      let char, flag1, flag2, flag3;
+      let spechar = "!@#$%^&*";
+
+      if (idPwdValueString == "") {
+        sp.innerHTML =
+          `<img src="Images/error.png">` + "不可空白";
+      } else if (pwdlength < 6) {
+        sp.innerHTML =
+          `<img src="Images/error.png">` + "請確認長度";
+      } else {
+        for (let i = 0; i < pwdlength; i++) {
+          char = idPwdValueString.charAt(i).toUpperCase();
+          console.log(char);
+          if (char >= "A" && char <= "Z") {
+            flag1 = true;
+          } else if (char >= "0" && char <= "9") {
+            flag2 = true;
+          } else if (spechar.includes(char)) {
+            flag3 = true;
+          }
+        } //for中3if皆成立
+        if (flag1 && flag2 && flag3) {
+          sp.innerHTML = `<img src="Images/check.png">` + "密碼格式正確";
+        } else {
+          sp.innerHTML =
+            `<img src="Images/error.png">` + "密碼格式不正確";
+        }
+      }
+
+    }
+    function checkName() {
+      let namValue = document.getElementById("nam");
+      let namValueString = namValue.value;
+      let namlength = namValueString.length;
+      let sp = document.getElementById("namsp");
+      let char, flag1;
+      let flag2 = true;
+
+      if (namValueString == "") {
+        sp.innerHTML =
+          `<img src="Images/error.png">` + "不可空白";
+      } else if (namlength < 2) {
+        sp.innerHTML =
+          `<img src="Images/error.png">` + "請確認長度";
+      } else {
+        for (let i = 0; i < namlength; i++) {
+          char = namValueString.charCodeAt(i);
+          console.log(char);
+          if (char > 255) {
+            flag1 = true;
+          } else {
+            flag2 = false;
+          }
+          if (flag1 && flag2) {
+            sp.innerHTML = `<img src="Images/check.png">` + "密碼格式正確";
+          } else {
+            sp.innerHTML =
+              `<img src="Images/error.png">` + "密碼格式不正確";
+          }
+        }
+      }
+    }
+    function checkDate() {
+      let dateValue = document.getElementById("date");
+      let dateValueString = dateValue.value;//日期date字串
+      let dateLength = dateValueString.length;
+      let sp = document.getElementById("datesp");
+      let formatDate = new Date(dateValueString);//輸入的字串日期轉date物件
+      let fromuserinputYear = formatDate.getFullYear();
+      let fromuserinputMonth = formatDate.getMonth() + 1;
+      let fromuserinputDay = formatDate.getDate();
+
+      if (fromuserinputMonth < 10) {
+        fromuserinputMonth = "0" + fromuserinputMonth;
+        console.log(fromuserinputMonth);
+      }
+
+      if (dateLength == 0) {
+        sp.innerHTML =
+          `<img src="Images/error.png">` + "不可空白";
+      } else if (dateLength < 10) {
+        sp.innerHTML =
+          `<img src="Images/error.png">` + "請確認輸入格式";
+      } else {
+        if (
+          dateValueString.substring(0, 4) == fromuserinputYear &&
+          dateValueString.substring(5, 7) == fromuserinputMonth &&
+          dateValueString.substring(8, 10) == fromuserinputDay
+        ) {
+          sp.innerHTML = `<img src="Images/check.png">` + "格式正確";
+        } else {
+          sp.innerHTML =
+            `<img src="Images/error.png">` + "請確認輸入日期是否合理";
+        }
+      }
+
+
+
+
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #668b85;
+    }
+
+    #information {
+      text-align: center;
+      color: #ada268;
+    }
+
+    a {
+      color: #454e51;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #ada268;
+    }
+
+    .spanhref span {
+      font-size: 20px;
+    }
+
+    /* ------------------------------ */
+
+    h1 {
+      color: #ada268;
+      text-align: center;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    .divclass {
+      width: 450px;
+      background-color: #ada268;
+      color: #454e51;
+      border-radius: 15px;
+      border-bottom: 3px dashed #ada268;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    legend {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 25px;
+      color: #454e51;
+      text-align: center;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    fieldset {
+      margin: 0 auto;
+      width: 800px;
+      border: 6px solid #ada268;
+      border-radius: 15px;
+    }
+
+    span {
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="information">
+    <h1>Hello</h1>
+
+    <div class="spanhref">
+      <span>
+        <a href="homework_01_ 9*9multiplication.html">
+          9*9 Multiplication
+        </a>
+      </span>
+      <span>
+        <a href="homework_02_formcheck.html">Form Check</a>
+      </span>
+      <span>
+        <a href="homework_03_ rate.html">Rate</a>
+      </span>
+      <span>
+        <a href="homework_06_district.html">District</a>
+      </span>
+    </div>
+
+    <br />
+    <br />
+    <h2>2. 製作表單包含下列欄位:</h2>
+  </div>
+
+  <form action="">
+    <fieldset>
+      <legend>Form Check</legend>
+      <div class="divclass">
+        <label>姓名：</label>
+        <input type="text" id="nam">
+        <script>
+          document
+            .getElementById("nam")
+            .addEventListener("blur", checkName, false);
+        </script>
+        <span id="namsp"></span>
+        <br />
+        <span>
+          (1.不可空白 2.至少兩個字以上 3.必須全部為中文字)
+        </span>
+      </div>
+
+      <div class="divclass">
+        <label>密碼：</label>
+        <input type="text" id="pwd">
+        <script>
+          document
+            .getElementById("pwd")
+            .addEventListener("blur", checkPwd, false);
+        </script>
+        <span id="pwdsp"></span>
+        <br />
+        <span>
+          (1.不可空白 2.至少6個字且必須包含英數字、特殊字元［!@#$%^&*］)
+        </span>
+      </div>
+
+      <div class="divclass">
+        <label>日期：</label>
+        <input type="text" id="date">
+        <script>
+          document
+            .getElementById("date")
+            .addEventListener("blur", checkDate, false);
+        </script>
+        <span id="datesp"></span>
+        <br />
+        <span>(格式：西元年/月/日(yyyy/mm/dd))<span>
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
